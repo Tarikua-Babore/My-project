@@ -2,7 +2,7 @@ const apiKey = "caa700cd0e7383f6904e3258edb848dc";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
-const weatherIcon = document.querySelector(".weather-Icon");
+const weatherIcon = document.querySelector(".weatherIcon");
 async function checkWeather(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
   const data = await response.json();
@@ -14,13 +14,13 @@ async function checkWeather(city) {
     if (data.weather[0].main == "Clouds") {
       weatherIcon.src = "src/IMG/cloud.png";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "src/IMG/sunny.png";
+      weatherIcon.src = "..src/IMG/sunny.png";
     } else if (data.weather[0].main == "Rain") {
-      weatherIcon.src = "src/IMG/rain.png";
+      weatherIcon.src = "..src/IMG/rain.png";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "src/IMG/drizzel.png";
+      weatherIcon.src = "..src/IMG/drizzel.png";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "src/IMG/mist.png";
+      weatherIcon.src = "..src/IMG/mist.png";
     }
     document.querySelector(".weather").style.display = "block";
   } else {

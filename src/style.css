@@ -6,7 +6,8 @@ box-sizing: border-box;
 }
 
 body{
-    background-color: #222;
+    background-color:#5b548a;
+    background-image: url(../src/IMG/weatherbackground.png);
 }
 
 .card{
@@ -17,7 +18,8 @@ body{
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
-    text-align: center;
+    text-align:center;
+    margin-top: 20px;
 }
 
 .search{
